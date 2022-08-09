@@ -1,0 +1,9 @@
+Dentro do projeto pode ser usado três formas diferentes quanto ao estilo:
+
+1) Colocamos o atributo "style" dentro de uma tag especifica como, por exemplo, "<p>" ou "<h1>";
+Ficando assim : <p style=" "> ou <h1 style=" ">
+
+2) Podemos usar uma tag especifica chamada <style>. Dentro dela, devemos fazer uma referencia do 
+lugar que receberá o estilo
+
+3) Podemos usar a tag <link> que irá fazer a ligação de um arquivo "css" com o "html".(arquivo externo)
