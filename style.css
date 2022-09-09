@@ -32,6 +32,7 @@ nav a {
     text-decoration: none;
 }
 
+/*pseudo elemento*/
 nav a:hover {
     color: #C78C19;
     text-decoration: underline;
@@ -55,17 +56,19 @@ nav a:hover {
     border-radius: 10px;
 }
 
+ /*pseudo elemento*/
 .produtos li:hover {
     border-color: #C78C19;
 }
-
+ /*pseudo elemento*/
 .produtos li:active {
     border-color: #088C19;
 }
-
+ /*pseudo elemento*/
 .produtos li:hover h2 {
     font-size: 34px;
 }
+
 
 .produtos h2 {
     font-size: 30px;
@@ -133,7 +136,8 @@ form label, form legend {
     cursor: pointer;
 }
 
-.enviar:hover {
+/*pseudo elemento*/
+.enviar:hover {                         
     background-color: darkorange;
     transform: scale(1.2);
 }
@@ -225,20 +229,45 @@ td, th {
     line-height: 1.5;
 }
 
-.itens:first-child {
+ /*pseudo elemento */
+.itens:first-child { 
     font-weight: bold;
 }
 
+ /*pseudo elemento */
 .itens:before {
     content: "★";
 }
 
 .imgbeneficios {
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 5px black;
 }
 
+ /*pseudo elemento */
+.imgbeneficios:hover {
+    opacity: 0.3;
+}
 
 .video {
     width: 560px;
     margin: 2em auto;
+}
+
+@media screen and (max-width 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto
+    } 
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+
 }
